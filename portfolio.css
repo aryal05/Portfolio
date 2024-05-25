@@ -33,7 +33,7 @@ body{
 }
 .navbar a{
      display: inline-block;
-     font-size: 18px;
+     font-size: 25px;
      color: #fff;
      text-decoration: none;
      font-weight: 500;
@@ -61,7 +61,7 @@ body{
      font-weight: 700;
 }
 .home-content h3{
-     font-size: 32px;
+     font-size: 40px;
      font-weight: 700;
      opacity: 0;
      animation: slideBottom 1s ease forwards;
@@ -77,7 +77,7 @@ body{
    
 }
 .home-content h1{
-     font-size: 56px;
+     font-size: 60px;
      font-weight: 700;
      margin: -3px 0;
      opacity: 0;
@@ -85,7 +85,7 @@ body{
      animation-delay: 1s;
 }
 .home-content p{
-     font-size: 16px;
+     font-size: 25px;
      opacity: 0;
      animation: slideLeft 1s ease forwards;
      animation-delay: .7s;
@@ -152,9 +152,208 @@ body{
      opacity: 0;
      animation: slideTop 1s ease forwards;
      animation-delay: 2s;
+}
+
+.heading{
+     font-size: 5rem;
+     text-align: center;
+     margin: 5rem 0;
+     opacity: 0;
+     animation: slideBottom 2s ease forwards;
+     animation-delay: calc(.2s * var(--i));
+}
+
+.education{
+     padding: 100px 15px;
+     background: #1f242d;
+}
+
+.education h2{
+     margin-bottom: 5rem;
+
+}
+
+.timeline-items{
+     max-width: 1200px;
+     margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     position: relative;
+}
+.timeline-items::before{
+     content: "";
+     position: absolute;
+     width: 5px;
+     height: 100%;
+     background-color: #0ef;
+     left:calc(50% - 1px) ;
+}
+
+.timeline-item{
+     margin-bottom: 40px;
+     width: 100%;
+     position: relative;
+
+}
+ 
+.timeline-item:last-child{
+     margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+     padding-right: calc(50% + 30px);
+     text-align: right;
+}
+
+
+.timeline-item:nth-child(even){
+     padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+     height: 23px;
+     width: 21px;
+     background-color: #0ef;
+     box-shadow: 0 0 25px #0ef,
+                 0 0 50px #0ef;
+     position: absolute;
+     left: calc(50% - 8px);
+     border-radius: 50%;
+     top: 10px;
+     opacity: 0;
+     animation: slideRight 1.5s ease forwards;
+     animation-delay: calc(.2s * var(--i));            
+
+}
+
+.timeline-date{
+     font-size: 20px;
+     font-weight: 800;
+     color: #fff;
+     margin: 6px 0 15px;
+     opacity: 0;
+     animation: slideTop 2s ease forwards;
+     animation-delay: calc(.2s * var(--i));
+}
+
+.timeline-content{
+     background-color: #1f242d;
+     border: 3px solid #0ef;
+     border-radius: 4rem;
+     padding: 30px 58px;
+     box-shadow: 0 0 10px #0ef;
+     cursor: pointer;
+     transition: 0.3s ease-in-out;
+     opacity: 0;
+     animation: slideLeft 2.5s ease forwards;
+     animation-delay: calc(.2s * var(--i));
+
+}
+.timeline-content:hover{
+     font-size: 20px;
+     color: #fff;
+     margin: 0 0 10px;
+     font-weight: 500;
+ 
+}
+
+.timeline-content p{
+     color: #fff;
+     font-size:16px ;
+     font-weight: 300;
+     line-height: 22px;
+
+}
+
+::-webkit-scrollbar{
+     width: 15px;
+
+}
+::-webkit-scrollbar-thumb{
+     background-color: #3C5148;
 
 
 }
+/* services section css*/
+
+.heading span{
+     color: #0ef;
+}
+.services h2{
+     margin-bottom: 5rem;
+
+}
+.services-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 2rem;
+}
+.services-container .service-box{
+     flex: 0 1 30rem;
+     background: #1f242d;
+     padding: 0rem 2rem 2rem;
+     border-radius: 2rem;
+     text-align: center;
+     border: .2rem solid #0ef;
+     transition: .5s ease;
+}
+.services-container .service-box:hover{
+     border-color: #0ef;
+     transform: scale(1.02);
+
+
+
+
+
+}
+.service-box i{
+     font-size: 5rem;
+     color: #0ef;
+}
+
+.service-box h3{
+     font-size:2.2rem ;
+}
+.service-box p{
+     font-size: 1.6rem;
+     margin: 1rem 0 3rem ;
+}
+ 
+/* contact section*/
+.contact h2{
+     margin-bottom: 3rem;
+}
+.contact form{
+     max-width: 70rem;
+     margin: 1rem auto;
+     text-align: center;
+     margin-bottom: 3rem;
+
+}
+
+.contact form .input-box input,
+.contact form textarea{
+     width: 100%;
+     padding: 1.5rem;
+     font-size: 1.6rem;
+     color: #3C5148;
+     background: #1f242d;
+     border-radius: .8rem;
+     margin: .7rem 0;
+}
+.contact form .input-box input{
+     width: 49%;
+}
+
+
+
+
+
+
+
+
+
 
 /* KeyFrame Animation*/
 
